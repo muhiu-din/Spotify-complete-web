@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Smooch+Sans:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Smooch Sans", serif;
+}
+
+body {
+
+    /* background: #000;
+    color: white;
+} */
+    .left {
+        width: 25vw;
+        padding: 10px;
+    }
+
+    .right {
+        width: 75vw;
+        padding: 10px;
+    }
+
+    .home ul li {
+        list-style: none;
+        width: 15px;
+        display: flex;
+        gap: 15px;
+        padding-top: 14px;
+        font-weight: bold;
+    }
+    .library .lab-icon img{
+        width: 20px ;
+    }
+    .library{
+        min-height: 70vh;
+        position: relative;
+    }
+    .heading{
+        display: flex;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .footer{
+        display: flex;
+        font-size: 10px;
+        color: grey;
+        gap: 8px;
+        position: absolute;
+        bottom: 0;
+        flex-direction: column;
+    }
+    .footer .flex{
+        gap: 13px;
+    }
+    .footer a{
+        color: grey;
+        text-decoration: none;
+        
+    }
+    .right .header{
+        height: 10vh;
+        justify-content: space-between;
+        padding: 5px;
+        margin-left: 0;
+    }
