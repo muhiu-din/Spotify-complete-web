@@ -63,3 +63,34 @@ body {
         padding: 5px;
         margin-left: 0;
     }
+    .button{
+        border-radius: 50%;
+        width: 20px;
+        height: auto;
+        font-size: larger;
+        font-weight: 900;
+        color: white;
+        background: #000;
+        margin-left: 10px;
+    }
+    .button:hover{
+        transition: 0.3s ease all;
+        background-color: #474141;
+    }
+    .accounts span button{
+        padding: 2px 5px;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: large;
+    }
+    .accounts span button:hover{
+        transition: 0.3s ease all;
+        background-color: #474141;
+        color: white;
+    }
+
+    .accounts span h4:hover{
+        transition: 0.3s ease all;
+        color: grey;
+        cursor: pointer;
+    }
