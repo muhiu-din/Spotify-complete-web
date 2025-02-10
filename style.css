@@ -94,3 +94,7 @@ body {
         color: grey;
         cursor: pointer;
     }
+    .spotifyplaylist{
+        height: 79vh;
+        margin-right: 5px;
+    }
