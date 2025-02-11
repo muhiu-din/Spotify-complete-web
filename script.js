@@ -1,6 +1,6 @@
 function addBox(image ,heading ,text) {
     let doc = document.body.getElementsByClassName(box);
-    add
+    
                 <div class="innerlists">
                     <div class="box">
                         <div class="image ">
