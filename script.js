@@ -1,16 +1,27 @@
-function addBox(image ,heading ,text) {
-    let doc = document.body.getElementsByClassName(box);
+console.log('Lets write some js');
+async function getSongs() {
+    let a = await fetch("http://127.0.0.1:3000/songs/")
+    let result = await a.text();
+    console.log(result);
+    let div = document.createElement("div")
+    div.innerHTML = result
+    let as = div.getElementsByTagName("a")
+    let songs=[]
+    for (let index = 0; index < as.length; index++) {
+        const element = as[index];
+        if (element.href.endsWith(".mp3")) {
+            songs.push(element.href)
+        }
+
+    }
+return songs;
     
-                <div class="innerlists">
-                    <div class="box">
-                        <div class="image ">
-                            <img src="${image}" alt="dp">
-                        </div>
-                        <div class="text">
-                            <h1>"${heading}"</h1>
-                            <p>"${text}"</p>
-                        </div>
-                    </div>
-                </div>
+    
 }
-addBox("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiiNSZIpfMO6mIbPHTR9lGR8H1SIN4wvAaiQ&s" , "Song Cover" , "Let the beat hit niggas")
+async function main() {
+    let songs = getSongs()
+    console.log(songs);
+    var audio = new Audio(songs[0]);
+    audio.play();
+}
+main()
