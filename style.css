@@ -46,7 +46,7 @@ body {
         font-size: 10px;
         color: grey;
         gap: 8px;
-        position: absolute;
+        position: fixed;
         bottom: 0;
         flex-direction: column;
     }
@@ -167,6 +167,8 @@ body {
     }
     .SongsLists{
         margin: 10px;
+        max-height: 55vh;
+        overflow: auto;
     }
     .SongsLists ol{
         padding: 0 12px;
@@ -174,6 +176,23 @@ body {
     .SongsLists ol li{
         display: flex;
         flex-direction: row;
-        gap: 15px;
+        gap: 10px;
         align-items: center;
+        cursor: pointer;
+        margin: 12px 0;
+        justify-content: space-between;
+        padding: 4px;
+        border: 1px solid white;
+        border-radius: 8px;
+        width: 220px;
+    }
+    .playimage{
+        gap: 12px;
+        flex-direction: row-reverse;
+    }
+    .SongsLists ol li .info{
+        font-size: 12px;
+        max-width: 220px;
+        font-weight: bold;
+
     }

@@ -25,7 +25,19 @@ async function main() {
 
     let songol = document.querySelector(".SongsLists").getElementsByTagName("ol")[0]
     for (const song of songs) {
-        songol.innerHTML += `<li>${song}<li>`;
+        songol.innerHTML += `<li>
+                            <div class="images">
+                                <img class="invert card" src="imgs/music .svg" alt="music">
+                            </div>
+                            <div class="info">
+                                <div >${song.replace("songs,.mp" ," ")}</div>
+                                <div >Muhiu</div>
+                            </div>
+                            <div class="playimage flex items-center">
+                                <img class="invert" src="imgs/songbutton.svg" alt="">
+                                <p>Play</p>
+                            </div>
+                        </li>`;
     }
     // play first song
     var audio = new Audio(songs[0]);
