@@ -9,8 +9,9 @@ async function getSongs() {
     let songs=[]
     for (let index = 0; index < as.length; index++) {
         const element = as[index];
-        if (element.href.endsWith(".mp3")) {
-            songs.push(element.href)
+        let href = element.getAttribute("href");
+        if (href.endsWith(".mp3")) {
+            songs.push(href.split("/songs/")[1])
         }
 
     }
@@ -19,9 +20,20 @@ return songs;
     
 }
 async function main() {
-    let songs = getSongs()
+    let songs = await getSongs()
     console.log(songs);
+
+    let songol = document.querySelector(".SongsLists").getElementsByTagName("ol")[0]
+    for (const song of songs) {
+        songol.innerHTML += `<li>${song}<li>`;
+    }
+    // play first song
     var audio = new Audio(songs[0]);
     audio.play();
+
+    audio.addEventListener("loadeddata", ()=>{
+        console.log(audio.duration ,audio.currentSrc , audio.currentTime);
+        
+    })
 }
 main()

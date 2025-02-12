@@ -165,3 +165,10 @@ body {
         padding: 10px;
         gap: 12px;
     }
+    .SongsLists{
+        margin: 10px;
+    }
+    .SongsLists ol{
+        padding: 0 12px;
+    }
+    
