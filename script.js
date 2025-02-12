@@ -11,7 +11,7 @@ async function getSongs() {
         const element = as[index];
         let href = element.getAttribute("href");
         if (href.endsWith(".mp3")) {
-            songs.push(href.split("/songs/")[1])
+            songs.push(href)
         }
 
     }

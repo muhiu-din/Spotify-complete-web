@@ -148,7 +148,7 @@ body {
         bottom: 75px;
         transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
     }
-    .box .image:hover .popup{
+    .box:hover .image .popup{
     visibility: visible;
     opacity: 1;
     }
@@ -171,4 +171,9 @@ body {
     .SongsLists ol{
         padding: 0 12px;
     }
-    
+    .SongsLists ol li{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        align-items: center;
+    }
