@@ -13,8 +13,9 @@
     <div class="container flex flex-row bg-black">
         <div class="left ">
             <div class="home bg-box rounded m1 p1">
-                <div class="logo invert">
+                <div class="logo invert flex justify-space">
                     <img src="imgs/logo.svg" alt="logo">
+                    <img class="close" src="imgs/close.svg" alt="close">
                 </div>
                 <ul>
                     <li><img class="invert" src="imgs/home.svg" alt="home">Home</li>
@@ -49,11 +50,14 @@
                 </div>
             </div>
         <div class="right ">
-            <div class="header bg-box rounded m1 items-center flex">
+            <div class="header bg-box rounded m1 items-center flex">  
+                <div class="hamcontainer">
+                <img class="invert ham" src="imgs/hamburger.svg" alt="hamburger">
                <div class="buttons">
               <button class="button">&lt;</button>
               <button class="button">&gt;</button>
                </div>
+            </div>
                <div class="accounts flex g1 items-center">
                 <span><h4>Sign up</h4></span>
                 <span><button class="rounded">Log in</button></span>
@@ -74,13 +78,20 @@
                 </div>
             </div>
             <div class="playbox">
+                <div class="seekbar">
+                    <div class="circle">
+
+                    </div>
+                </div>
+                <div class="aboveBar">
                 <div class="songInfo"></div>
                 <div class="songButton">
-                    <img src="imgs/previous.svg" alt="">
-                <img src="imgs/play.svg" alt="">
-                <img src="imgs/next.svg" alt="">
+                <img id="previous" src="imgs/previous.svg" alt="">
+                <img id="play" src="imgs/pause.svg" alt="">
+                <img id="next" src="imgs/next.svg" alt="">
                 </div>
                 <div class="songTime"></div>
+            </div>
             </div>
         </div>
     </div>
